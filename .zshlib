@@ -1,0 +1,15 @@
+# ASDF
+if type asdf >/dev/null 2>&1; then
+  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+  export ASDF_CONFIG_FILE=$HOME/.config/asdf/.asdfrc
+  fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+fi
+
+# Docker CLI completions.
+if [[ -d "$HOME/.docker/completions" ]] then
+  fpath=($HOME/.docker/completions $fpath)
+fi
+
+# Load auto completions
+autoload -Uz compinit
+compinit -C
