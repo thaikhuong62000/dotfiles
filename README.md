@@ -38,6 +38,11 @@ brew install fzf
 brew install zoxide
 ```
 
+### Tmux
+```bash
+brew install tmux
+```
+
 ## Installation
 
 After clone, using stow to symlink the dotfiles to your home directory
@@ -52,3 +57,5 @@ Install fonts for oh-my-posh
 ```bash
 sudo oh-my-posh font install
 ```
+
+Load Tmux plugins by launching tmux and pressing `Ctrl Space` + `I` (capital i, as in Install)

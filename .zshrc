@@ -21,6 +21,9 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
+# Add in snippets
+zinit snippet OMZP::safe-paste
+
 # Load completions
 autoload -Uz compinit && compinit
 
@@ -44,6 +47,10 @@ fi
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+
+# Fix Ctrl-W ignore delimiter (/) issue
+autoload -U select-word-style
+select-word-style bash
 
 # History
 HISTSIZE=5000
