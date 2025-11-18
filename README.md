@@ -5,7 +5,15 @@ This directory contains the dotfiles for my system
 ## Requirements
 Ensure you have the following installed on your system
 
+### For Ubuntu: install zsh
+```bash
+sudo apt install zsh
+chsh -s $(which zsh)
+```
+
 ### Homebrew
+
+Install Homebrew and adding Homebrew to current shell session
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -24,8 +32,14 @@ brew install stow
 
 ### Oh My Posh
 
+Macos
 ```bash
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
+```
+
+Ubuntu
+```bash
+curl -s https://ohmyposh.dev/install.sh | bash -s
 ```
 
 ### Fzf
@@ -38,9 +52,11 @@ brew install fzf
 brew install zoxide
 ```
 
-### Tmux
+### Tmux (Optional)
 ```bash
 brew install tmux
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 ### Kitty (Optional)
@@ -60,7 +76,7 @@ stow .
 Install fonts for oh-my-posh
 
 ```bash
-sudo oh-my-posh font install
+oh-my-posh font install
 ```
 
 Load Tmux plugins by launching tmux and pressing `Ctrl Space` + `I` (capital i, as in Install)

@@ -10,6 +10,12 @@ if [[ -d "$HOME/.docker/completions" ]] then
   fpath=($HOME/.docker/completions $fpath)
 fi
 
+# Fix Kitty terminal issues
+export TERM=xterm
+
+# Add local bin to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # Load auto completions
 autoload -Uz compinit
 compinit -C
