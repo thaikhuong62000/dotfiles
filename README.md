@@ -43,6 +43,11 @@ brew install zoxide
 brew install tmux
 ```
 
+### Kitty (Optional)
+```bash
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+```
+
 ## Installation
 
 After clone, using stow to symlink the dotfiles to your home directory
