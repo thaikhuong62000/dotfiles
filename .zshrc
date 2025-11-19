@@ -29,6 +29,11 @@ zinit light Aloxaf/fzf-tab
 
 # Add in snippets
 zinit snippet OMZP::safe-paste
+zinit snippet OMZP::ssh
+zinit snippet OMZP::tmux # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
+ZSH_TMUX_FIXTERM=false
+zinit snippet OMZP::git # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+
 
 # Load completions
 autoload -Uz compinit && compinit
