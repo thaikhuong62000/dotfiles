@@ -18,4 +18,4 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Load auto completions
 autoload -Uz compinit
-compinit -C
+compinit -C -u

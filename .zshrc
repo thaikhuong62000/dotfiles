@@ -36,7 +36,7 @@ zinit snippet OMZP::git # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
 
 
 # Load completions
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -C -u
 
 zinit cdreplay -q
 
