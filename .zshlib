@@ -16,6 +16,9 @@ export TERM=xterm
 # Add local bin to PATH
 export PATH="$HOME/.local/bin:$PATH"
 
+# Add Go packages to PATH
+export PATH="$HOME/go/bin:$PATH"
+
 # Load auto completions
 autoload -Uz compinit
 compinit -C -u

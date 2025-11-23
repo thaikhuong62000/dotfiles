@@ -63,6 +63,9 @@ bindkey '^n' history-search-forward
 autoload -U select-word-style
 select-word-style bash
 
+# Fix inconsistent letter spacing
+export LANG=en_US.UTF-8
+
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
